@@ -2,7 +2,7 @@
 /**
  * Created by Vihanga Bandara on 08-Apr-17.
  */
-
+//type server.js -> to check for file content in console
 //vihanga123 vIHANGA2TIMES
 const express = require('express');  // a light weight web framework
 const http = require('http'); //http server
