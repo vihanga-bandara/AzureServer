@@ -182,7 +182,7 @@ function getMail(){
 timeCheck = moment();
 var difference = moment.utc(moment(timeCheck,"DD/MM/YYYY HH:mm:ss").diff(moment(endTime,"DD/MM/YYYY HH:mm:ss"))).format("ss");
 
-if(difference==40 && (!isSeated)){
+if(difference==20 && (!isSeated)){
    startSpin();
     console.log("Sending Email...");
     sendEmail("Watch Out!","You need to take a break");
