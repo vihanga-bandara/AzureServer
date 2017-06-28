@@ -132,7 +132,7 @@ function businessLogic(message) {
    spinner.stop(true);
   var distance1 = message.distances.distance1;
   var distance2 = message.distances.distance2;
-
+  var BPM = message.distances.BPM;
     // var clientTime = message.timestamp;
     var clientTime = moment();  
 
@@ -197,6 +197,9 @@ if(difference==20 && (!isSeated)){
 //shows numbers of client messages received
 function processBreaks(distance1, distance2){
     console.log("Client Messages : " + clientMessageCount + "  --> Distance 1 : "+ distance1 +"    Distance 2 : "+ distance2);
+     sendDatabase("co0Si35YsNfJMTQm306ul3mGm8w1/HeartRate",BPM);
+    sendDatabase("co0Si35YsNfJMTQm306ul3mGm8w1/Distances/Distance1",distance1);
+    sendDatabase("co0Si35YsNfJMTQm306ul3mGm8w1/Distances/Distance2",distance2);
 }
 
 function getTime(){
