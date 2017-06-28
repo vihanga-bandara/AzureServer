@@ -161,7 +161,7 @@ function businessLogic(message) {
        
     getMail(); //function call to send mail to the user
 
-    processBreaks(distance1, distance2); //function call
+    processBreaks(distance1, distance2,BPM); //function call
 }
 
 //get time differences 
