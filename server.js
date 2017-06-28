@@ -195,7 +195,7 @@ if(difference==20 && (!isSeated)){
 
 
 //shows numbers of client messages received
-function processBreaks(distance1, distance2){
+function processBreaks(distance1, distance2,BPM){
     console.log("Client Messages : " + clientMessageCount + "  --> Distance 1 : "+ distance1 +"    Distance 2 : "+ distance2);
      sendDatabase("co0Si35YsNfJMTQm306ul3mGm8w1/HeartRate",BPM);
     sendDatabase("co0Si35YsNfJMTQm306ul3mGm8w1/Distances/Distance1",distance1);
